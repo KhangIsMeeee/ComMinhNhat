@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quản lý bán hàng</title>
+<!-- CẬP NHẬT 1: Đổi tên tab trình duyệt -->
+<title>CƠM MINH NHẬT</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; }
 header { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); position: sticky; top: 0; z-index: 10; }
 .header-top { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #eee; }
-h1 { font-size: 20px; }
+h1 { font-size: 20px; color: #d9534f; } /* Đổi màu tiêu đề cho nổi bật */
 nav { display: flex; padding: 0 20px; gap: 8px; overflow-x: auto; }
 .tab-btn { background: none; border: none; padding: 12px 16px; font-size: 14px; cursor: pointer; color: #666; border-bottom: 2px solid transparent; font-weight: 500; white-space: nowrap; }
 .tab-btn.active { color: #0071e3; border-bottom-color: #0071e3; }
@@ -88,12 +89,21 @@ main { padding: 20px; max-width: 1200px; margin: 0 auto; }
 
 .empty { text-align: center; padding: 40px; color: #999; }
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #1d1d1f; color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 14px; z-index: 200; }
+
+/* CSS cho phần Footer */
+footer { text-align: center; padding: 20px; font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #e5e5ea; }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-top"><h1>🍜 Quản lý bán hàng</h1></div>
+  <!-- CẬP NHẬT 2: Đổi tên quán và thêm tên nhà phát triển -->
+  <div class="header-top">
+    <div>
+      <h1>🍚 CƠM MINH NHẬT</h1>
+      <div style="font-size: 13px; color: #888; margin-top: 4px;">Được phát triển bởi @MinhKhang</div>
+    </div>
+  </div>
   <nav>
     <button class="tab-btn active" data-tab="tables">🪑 Bàn</button>
     <button class="tab-btn" data-tab="menu">🍽️ Menu</button>
@@ -136,6 +146,11 @@ main { padding: 20px; max-width: 1200px; margin: 0 auto; }
     </div>
   </section>
 </main>
+
+<!-- CẬP NHẬT 3: Thêm dòng chữ ở dưới cùng chân trang -->
+<footer>
+  &copy; 2024 Cơm Minh Nhật. Được phát triển bởi @MinhKhang.
+</footer>
 
 <div id="modal-root"></div>
 
